@@ -104,13 +104,13 @@ with col_hero:
 # ----------------------------- Inputs -----------------------------
 with st.sidebar:
     st.header("Inputs")
-    current_age = st.number_input("Current Age", 18, 100, 43)
+    current_age = st.number_input("Current Age", 18, 100, 30)
     coast_age = st.number_input("Coast (Part‑time) Age", current_age, 100, 50)
     retire_age = st.number_input("Full Retirement Age", coast_age, 100, 60)
     life_expectancy = st.number_input("Life Expectancy", retire_age, 120, 85)
 
     st.divider()
-    current_savings = st.number_input("Current Savings ($)", value=1_090_000, step=10_000)
+    current_savings = st.number_input("Current Savings ($)", value=1_090_00, step=10_000)
     contrib_full = st.number_input("Annual Savings (Full‑time) ($)", value=24_000, step=1_000)
     contrib_barista = st.number_input("Annual Savings (Barista) ($)", value=5_000, step=1_000)
     withdraw_retire = st.number_input("Annual Retirement Withdrawal ($)", value=95_000, step=1_000)
